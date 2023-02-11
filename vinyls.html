@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <style>
+        h1{
+            font-size: small;
+        }
+         body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+    </style>
+
+    <script type="text/javascript">
+        function goToNewPage()
+        {
+            var url = document.getElementById('list').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+
+
+    </head>
+    <body>
+    
+        <div class="navbar">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <strong>J+W ALBUM COVERS </strong>
+            </a>
+            <div class="dropdown">
+              <form>
+                <select name="list" id="list" accesskey="target">
+                    <option value='none' selected>Choose a Page</option>
+                    <option value='index.html'>Home Page</option>
+                    <option value="vinyls.html">Vinyls Shop</option>
+                    <option value="credits.html">Credits Page</option>
+                </select>
+                <input type=button value="Go" onclick="goToNewPage()" />
+                </form>
+              </div>
+            </div> 
+          </div>
+          
+          <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assignment1\images\badBunnyVinyl.jpg" alt=""style="width:430px;height:420px;" >
+                <div class="card-body">
+                  <p class="card-text">This is  badBunny latest album that dropped this past summer and it just recently won a grammy. 
+                    Vinyls are currently limited editon and are first come first serve.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> -->
+                    <small class="text-muted">$20</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assignment1\images\lookAtMeVinyl.webp" alt="">
+                <div class="card-body">
+                  <p class="card-text">xxxTentacion limited edition single vinyl</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> -->
+                    <small class="text-muted">$3</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assignment1\images\SS3Vinyl_ish.webp" alt="" style="width:430px;height:420px;">
+                <div class="card-body">
+                  <p class="card-text"> 
+                    Young Thug slime season viynl
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> -->
+                    <small class="text-muted">$20</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assignment1\images\nwaVinyl.webp" alt="" style="width:430px;height:420px;">
+                <div class="card-body">
+                  <p class="card-text">This is the first album of the notorious rap group NWA. Orginal Viynls</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> -->
+                    <small class="text-muted">$40</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assignment1\images\awakenMyLoveVinyl_innit.jpg" alt="">
+                <div class="card-body">
+                  <p class="card-text">This is Childish Gambino / Donald Glover's most succesful album to date, with the triple platinum hit "Redbone". 
+                    Vynls Sold here!
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> -->
+                    <small class="text-muted">$21</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assignment1\images\hellOrHighWaterVinyl.jfif" alt="" style="width:430px;height:420px;">
+                <div class="card-body">
+                  <p class="card-text">The first of three volumes by rap group "City Morgue", a rap group known for seamlessly blending together rock and rap.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> -->
+                    <small class="text-muted">$15</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <footer>
+                <p>Author: Will Griner, Jonathan Duron</p>
+                
+              </footer>
+    </body>
+</html>
